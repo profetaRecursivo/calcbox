@@ -10,6 +10,6 @@ int gcd(int a, int b) {
 }
 
 long long lcm(int a, int b) {
-    int ans = a/gcd(a, b) * b;
+    long long ans = 1ll * a/gcd(a, b) * b;
     return ans;
 }
