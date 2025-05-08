@@ -1,3 +1,3 @@
 int gcd(int a, int b);
 
-int lcm(int a, int b);
+long long lcm(int a, int b);
