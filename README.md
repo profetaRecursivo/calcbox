@@ -10,16 +10,26 @@ Utilizamos el enfoque **Ship / Show / Ask (SSA)**.
 
 ### ¿Nos sirvió el modelo SSA?
 
+La verdad es que sí, encontramos SSA muy útil porque:
+
+- **Estructuró bien los pasos del proyecto**: nos permitió dividir la aplicación en partes manejables y saber exactamente qué hacer en el desarrollo.
+- **Facilitó la toma de decisiones**: al visualizar el flujo y las tareas, pudimos decidir mejor qué funcionalidades implementar primero.
+- **Optimización del tiempo**: al definir claramente los módulos, evitamos redundancias y optimizamos el desarrollo.
+
+
+
 ### Problemas encontrados:
 - En ocasiones no es tan claro saber si un cambio debía ser `ship`, `show` o `ask`.
 
 ### Conflictos y su origen:
 
 ## Buenas y Malas Prácticas
-
+ -   Shamir es observador, se dio cuenta de un posible desborde por el tamaño en bits de un entero con signo en c++ y modifico mi pull request para que no exista dicho desborde, documentado por Sebastian.
 ## Git Hooks o Git Alias Utilizados
 
 ### Git Hooks
+
+- `pre-commit`: Verifica que cada archivo `.cpp` tenga su correspondiente `.h`, excluyendo `main.cpp`.
 
 ### Git Alias
 ```bash
