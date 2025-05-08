@@ -9,7 +9,7 @@ int gcd(int a, int b) {
     return a;
 }
 
-int lcm(int a, int b) {
+long long lcm(int a, int b) {
     int ans = a/gcd(a, b) * b;
     return ans;
 }
