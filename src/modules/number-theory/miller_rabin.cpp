@@ -1,9 +1,9 @@
-#include "euclidean.h"
+#include "miller_rabin.h"
 #include <iostream>
 #include <cstdlib>
 
-int binpower(int base, int e, int mod) {
-    int res = 1;
+long long binpower(long long base, long long e, long long mod) {
+    long long res = 1;
     base %= mod;
     while (e > 0) {
         if (e & 1)
@@ -14,28 +14,28 @@ int binpower(int base, int e, int mod) {
     return res;
 }
 
-bool check_composite(int n, int a, int d, int s) {
-    int x = binpower(a, d, n);
+bool check_composite(long long n, long long a, long long d, long long s) {
+    long long x = binpower(a, d, n);
     if (x == 1 || x == n - 1) return false;
-    for (int r = 1; r < s; r++) {
+    for (long long r = 1; r < s; r++) {
         x = (x * x) % n;
         if (x == n - 1) return false;
     }
     return true;
 }
 
-bool isProbablePrime(int n, int iter = 5) {
+bool isProbablePrime(long long n, int iter = 5) {
     if (n < 4) return n == 2 || n == 3;
 
-    int s = 0;
-    int d = n - 1;
+    long long s = 0;
+    long long d = n - 1;
     while ((d & 1) == 0) {
         d >>= 1;
         s++;
     }
 
     for (int i = 0; i < iter; i++) {
-        int a = 2 + rand() % (n - 3);
+        long long a = 2 + rand() % (n - 3);
         if (check_composite(n, a, d, s)) return false;
     }
     return true;
