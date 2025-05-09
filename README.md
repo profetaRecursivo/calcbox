@@ -25,6 +25,7 @@ La verdad es que sí, encontramos SSA muy útil porque:
 
 ## Buenas y Malas Prácticas
  -   Shamir es observador, se dio cuenta de un posible desborde por el tamaño en bits de un entero con signo en c++ y modifico mi pull request para que no exista dicho desborde, documentado por Sebastian.
+ - Sebastián está haciendo un buen trabajo. Sus implementaciones son claras y bien estructuradas, y los issues que plantea están bien explicados, lo que facilita bastante entender el rumbo del proyecto. 
 ## Git Hooks o Git Alias Utilizados
 
 ### Git Hooks
