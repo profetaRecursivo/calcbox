@@ -22,8 +22,8 @@ La verdad es que sí, encontramos SSA muy útil porque:
 ### 🧨 Conflictos y su origen:
 
 - **Conflicto 1**: Al actualizar el `README.md`, Brenda y Shamir hicieron cambios simultáneos. 
-  - **Origen**: Ambos siguieron el issue relacionado a la decoración del `README.md`, pero no se comunicaron sobre los cambios que estaban realizando.
-  - **Solución**: Shamir propuso un merge y ambos revisaron los cambios. Se llegó a un acuerdo sobre el contenido final.
+  - **Origen**: Ambos siguieron el issue relacionado a la decoración del `README.md`, pero no se comunicaron sobre los cambios que estaban realizando. Brenda hizo merge de su rama primero, y luego cuando Shamir abrió una pull request para hacer merge de su rama, esta tenía conflictos. 
+  - **Solución**: Shamir revisó los conflictos, propuso un merge y ambos revisaron los cambios. Se llegó a un acuerdo sobre el contenido final.
 - **Conflicto 2**: Sebastian no se dio cuenta que subio el gitignore de una rama con el contenido de una carpeta con una slash al final, pero en otro branch no estaba.
   - **Origen**: Sebastian no se dio cuenta que el gitignore estaba en una rama diferente y no lo subio a la rama principal.
   - **Solución**: Tuvo que hacer un merge de la rama con el gitignore y luego hacer un pull request para que se suba a la rama principal.
