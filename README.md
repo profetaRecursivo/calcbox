@@ -3,10 +3,10 @@
 ## 👥 Nombre del Equipo
 🐧 Testigos de Tux
 
-## 🌱 GitFlow Utilizado
+## 🚀 GitFlow Utilizado
 Utilizamos el enfoque **Ship 🚢 / Show 👀 / Ask ❓ (SSA)**. 
 
-## 📖 Bitácora del Mini-Proyecto
+## 📘 Bitácora del Mini-Proyecto
 
 ### ✅ ¿Nos sirvió el modelo SSA?
 
@@ -19,13 +19,12 @@ La verdad es que sí, encontramos SSA muy útil porque:
 ### ⚠️ Problemas encontrados:
 - En ocasiones no es tan claro saber si un cambio debía ser `ship` 🚢, `show` 👀 o `ask` ❓.
 
-### 💥 Conflictos y su origen:
-*(No se especificaron)*
+### 🧨 Conflictos y su origen:
 
-## 👍 Buenas y 🚫 Malas Prácticas
-- 🔍 Shamir es observador, se dio cuenta de un posible desborde por el tamaño en bits de un entero con signo en C++ y modificó mi pull request para que no exista dicho desborde, documentado por Sebastián.
-- ✨ Sebastián está haciendo un buen trabajo. Sus implementaciones son claras y bien estructuradas, y los issues que plantea están bien explicados, lo que facilita bastante entender el rumbo del proyecto. 
-- 📌 Brenda hace buen uso de los issues, con descripciones claras y propósitos valiosos que puedan aportar al proyecto. Sus pull requests son muy claros, indicando qué acción está realizando (ship 🚢, show 👀 o ask ❓), permitiendo que el flujo de trabajo sea más entendible y fluido. *Documentado por Shamir*
+## Buenas 👍 y 👎 Malas Prácticas
+ - 🔍 Shamir es observador, se dio cuenta de un posible desborde por el tamaño en bits de un entero con signo en c++ y modifico mi pull request para que no exista dicho desborde. *Documentado por Sebastian*
+ - 🛠️ Sebastián está haciendo un buen trabajo. Sus implementaciones son claras y bien estructuradas, y los issues que plantea están bien explicados, lo que facilita bastante entender el rumbo del proyecto. *Documentado por brenda* 
+ - 🧾 Brenda hace buen uso de los issues, con descripciones claras y propósitos valiosos que puedan aportar al proyecto. Sus pull requests son muy claros, indicando claramente qué acción está realizando (ship, show o ask), permitiendo que el flujo de trabajo sea más entendible y fluido. *Documentado por Shamir*
 
 ## 🛠️ Git Hooks o Git Alias Utilizados
 
@@ -33,7 +32,7 @@ La verdad es que sí, encontramos SSA muy útil porque:
 
 - `pre-commit`: Verifica que cada archivo `.cpp` tenga su correspondiente `.h`, excluyendo `main.cpp`.
 
-### ⚙️ Git Alias
+### 🔧 Git Alias
 ```bash
 # Para ver un grafo 📊 y observar bien las ramas
 git config --global alias.graph "log --graph --oneline --decorate --all"
